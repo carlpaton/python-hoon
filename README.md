@@ -21,7 +21,11 @@ Given a list of numbers, `bubblesort27.py` iterates though them one at a time an
 python bubblesort27.py
 ```
 
-### Docker
+### All the runs!
+
+Yeah sweet you copied the code but where can you run this?
+
+#### Docker
 
 A quick way to play with command line scripts is to bring up a Ubuntu docker container. The scripts will then need `--allow-run-as-root` when executing. (for reasons)
 
@@ -39,3 +43,26 @@ time mpiexec --allow-run-as-root python primenumbers27.py
 ```
 
 *  https://carlpaton.github.io/2018/04/linux-commands/ 
+
+#### Bare Metal - Ubuntu-18.04
+
+https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
+
+```
+--- 3x
+sudo apt update
+sudo apt install python3-pip
+pip3 --version
+
+--- 2.7
+sudo apt update
+sudo apt install python-pip
+```
+
+https://mpi4py.readthedocs.io/en/stable/install.html#using-pip-or-easy-install
+
+```
+pip3 install mpi4py ??
+pip install mpi4py 
+```
+
