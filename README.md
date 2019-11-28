@@ -2,6 +2,8 @@ Python scripts pillaged and manipulated for reasons.
 
 ### Prime Numbers
 
+* See [prime numbers](/pi-cluster/prime-numbers.md)
+
 `./pi-cluster/primenumbers27.py` finds prime numbers using an MPI cluster which I seem to now understand thanks to [Gary Explains](https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw) <3
 
 ```
