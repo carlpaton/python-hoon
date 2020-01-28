@@ -59,47 +59,6 @@ The number 5 is a prime number because it cannot be divided evenly by any other 
 
 Yeah sweet you copied the code but where can you run this?
 
-#### Docker
-
-A quick way to play with command line scripts is to bring up a Ubuntu docker container. The scripts will then need `--allow-run-as-root` when executing. (for reasons)
-
-```
-docker run -ti --name ubuntu-c ubuntu
-docker start -i ubuntu-c
-```
-
-Then install git & python, clone this repository and run the commands shown above per example.
-
-Example:
-
-```
-time mpiexec --allow-run-as-root python primenumbers27.py
-```
-
-*  https://carlpaton.github.io/2018/04/linux-commands/ 
-
-#### Bare Metal - Ubuntu-18.04
-
-https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
-
-```
---- 3x
-sudo apt update
-sudo apt install python3-pip
-pip3 --version
-
---- 2.7
-sudo apt update
-sudo apt install python-pip
-```
-
-https://mpi4py.readthedocs.io/en/stable/install.html#using-pip-or-easy-install
-
-```
-pip3 install mpi4py
-pip install mpi4py 
-```
-
 #### Raspberry PI Cluster
 
 1. Install `2019-09-26-raspbian-buster-full.zip` using `balenaEtcher-1.5.70-x64.AppImage` and complete the setup on each PI.
