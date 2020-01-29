@@ -1,6 +1,6 @@
 # Python: Machine Learning Fundamentals
 
-Packages used in the example python scripts.
+Popular packages used for `Python` **Machine Learning**
 
 ### NumPy 
 
@@ -24,7 +24,7 @@ Packages used in the example python scripts.
 
 * https://pandas.pydata.org/
 
-### References
+# Learning Materials and Courses
 
-* https://colab.research.google.com/
-* https://machinelearningmastery.com/crash-course-python-machine-learning-developers/
+* https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/crash-course-python-machine-learning-developers
+* https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/pandas
