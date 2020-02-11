@@ -1,30 +1,17 @@
-# Python: Machine Learning Fundamentals
+# Machine learning fundamentals
 
-Popular packages used for `Python` **Machine Learning**
+Suggested order of materials:
 
-### NumPy 
+1. [Machine Learning Fundamentals](https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/1)
 
-`NumPy` provides the foundation data structures and operations for `SciPy`. These are arrays (`ndarrays`) that are efficient to define and manipulate.
+2. [Models & Data](https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/2)
 
-* https://numpy.org/
+3. [Underfitting, overfitting & Deep Learning](https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/3)
 
-### Matplotlib
+Well you can do things out of order but the key of awesome would disagree.
 
-`Matplotlib` can be used for creating plots and charts. The library is generally used as follows:
-
-1. Call a plotting function with some data (e.g. plot()).
-2. Call many functions to setup the properties of the plot (e.g. labels and colors).
-3. Make the plot visible (e.g. show()).
-
-* https://matplotlib.org/
-
-### Pandas
-
-`Pandas` provides data structures and functionality to quickly manipulate and analyze data. The key to understanding Pandas for machine learning is understanding the Series and DataFrame data structures.
-
-* https://pandas.pydata.org/
-
-# Learning Materials and Courses
-
-* https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/crash-course-python-machine-learning-developers
-* https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/pandas
+> You'll do things out of order
+>
+> When you think it's the same but turns out different
+>
+> That's a horse of another color  -- *The Key of Awesome - Dark Horse parody*
