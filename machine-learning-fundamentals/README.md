@@ -8,6 +8,8 @@ Suggested order of materials:
 
 3. [Underfitting, overfitting & Deep Learning](https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/3)
 
+4. [TensorFlow Programming](https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals/4)
+
 Well you can do things out of order but the key of awesome would disagree.
 
 > You'll do things out of order
