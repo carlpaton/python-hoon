@@ -62,5 +62,4 @@ pwm.stop()
 GPIO.cleanup()
 ```
 
-* [https://reviseomatic.org/help/x-Raspberry-Pi/RasPi%20GPIO-PWM.php](https://reviseomatic.org/help/x-Raspberry-Pi/RasPi GPIO-PWM.php)
-
+* https://reviseomatic.org/help/x-Raspberry-Pi/RasPi%20GPIO-PWM.php
