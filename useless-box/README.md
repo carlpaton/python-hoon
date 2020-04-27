@@ -43,6 +43,8 @@ These values vary by servo but for the small cheap SG-90's the degrees can be ca
 ```
 
 * https://www.servocity.com/how-does-a-servo-work
+* http://www.robotplatform.com/knowledge/servo/servo_control_tutorial.html
+* http://webhome.csc.uvic.ca/~mcheng/samples/qu/SENG466_Home/Phase_1/Entries/2010/2/1_Servo_Motor.html
 * https://www.youtube.com/watch?v=xHDT4CwjUQE
 
 ### Inside the Useless Machine
