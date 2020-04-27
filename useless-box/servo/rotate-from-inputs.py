@@ -19,7 +19,9 @@ try:
     while True:
         #Ask user for angle and turn servo to it
         angle = float(input('Enter angle between 0 & 180: '))
-        servo1.ChangeDutyCycle(2+(angle/18))
+        duty = 2+(angle/18)
+        print(duty)
+        servo1.ChangeDutyCycle(duty)
         time.sleep(0.5)
         servo1.ChangeDutyCycle(0)
 
