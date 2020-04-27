@@ -1,3 +1,7 @@
+### What is a useless box?
+
+https://www.youtube.com/watch?v=aqAUmgE3WyM
+
 ### Pi Resources
 
 Move this here - https://carlpaton.github.io/2019/12/pi-resources/
