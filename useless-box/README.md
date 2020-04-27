@@ -2,7 +2,7 @@
 
 Move this here - https://carlpaton.github.io/2019/12/pi-resources/
 
-Re-install file manager when it crashes on start..
+Re-install file manager when it crashes on start.
 
 ```
 sudo apt-get install --reinstall pcmanfm
