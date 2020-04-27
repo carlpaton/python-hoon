@@ -2,6 +2,10 @@
 
 https://www.youtube.com/watch?v=aqAUmgE3WyM
 
+Then there are the advanced ones!
+
+https://www.youtube.com/watch?v=Nqk_nWAjBus
+
 ### Pi Resources
 
 Move this here - https://carlpaton.github.io/2019/12/pi-resources/
