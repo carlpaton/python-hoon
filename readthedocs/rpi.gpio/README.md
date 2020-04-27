@@ -31,6 +31,8 @@ servo.stop()
 GPIO.cleanup()
 ```
 
+* https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/
+
 ### LED
 
 ```python
