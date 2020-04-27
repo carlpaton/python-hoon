@@ -36,12 +36,13 @@ The square wave needs to be 50 herts (so a pulse of every 0.2 seconds)
 The angle of the servo is controled by the length of the positive pulse (duty cycle)
 The longer the pulse/period of the wave/duty cycle the larger the angle the servo will turn to and try hold itself at.
 
-These values vary by servo but the degrees can be calculated as:
+These values vary by servo but for the small cheap SG-90's the degrees can be calculated as:
 ```
 2% duty cycle = 0 degrees
 12% duty cycle = 180 degrees
 ```
 
+* https://www.servocity.com/how-does-a-servo-work
 * https://www.youtube.com/watch?v=xHDT4CwjUQE
 
 ### Inside the Useless Machine
