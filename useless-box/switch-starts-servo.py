@@ -1,62 +1,54 @@
 import RPi.GPIO as GPIO
 import time
 
-# Define duty in degrees
+GPIO.setmode(GPIO.BCM) 
+GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(18, GPIO.OUT)
+
 zeroDegrees = 2
 ninetyDegrees = 7
 oneHundredAndEightyDegrees = 14
-sleep = 0.6
+sleep3 = 0.6 # 3 seconds
+sleep2 = 0.4 # 2 seconds
+sleep1 = 0.2 # 1 second
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(11,GPIO.OUT)
-servo1 = GPIO.PWM(11,50) # Pin 11 for servo1
-GPIO.setup(12,GPIO.OUT)
-servo2 = GPIO.PWM(12,50) # Pin 12 for servo2
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 10 to be an input pin and set initial value to be pulled low (off)
+p = GPIO.PWM(18, 50)
+p.start(zeroDegrees)
+time.sleep(sleep3)
+p.ChangeDutyCycle(0)
+zero_servo = False
 
-print("START")
-message = ""
+try:
 
-while True:
-    if GPIO.input(10) == GPIO.HIGH:
-        time.sleep(2)
-        print ("Open lid")
-        servo1.ChangeDutyCycle(ninetyDegrees)
-        time.sleep(sleep)
-        servo1.ChangeDutyCycle(0)
-        time.sleep(sleep)
-
-        print ("Turn off the switch")
-        servo2.ChangeDutyCycle(oneHundredAndEightyDegrees)
-        time.sleep(sleep)
-        servo2.ChangeDutyCycle(0)
-        time.sleep(sleep)
-
-        print ("Pull switch arm back")
-        servo2.ChangeDutyCycle(zeroDegrees)
-        time.sleep(sleep)
-        servo2.ChangeDutyCycle(0)
-        time.sleep(sleep)
-
-        print ("Close lid")
-        servo1.ChangeDutyCycle(zeroDegrees)
-        time.sleep(sleep)
-        servo1.ChangeDutyCycle(0)
-        time.sleep(sleep)
-        
-    elif GPIO.input(10) == GPIO.LOW:
-        message = "Zero both"
-        servo1.ChangeDutyCycle(zeroDegrees)
-        servo2.ChangeDutyCycle(zeroDegrees)
-        time.sleep(sleep)
-        servo1.ChangeDutyCycle(0)
-        servo2.ChangeDutyCycle(0)
-        time.sleep(sleep)
-    
-    print(message, end="\r", flush=True)
-    
-#Clean things up at the end
-servo1.stop()
-servo2.stop()
-GPIO.cleanup()
-print ("DONE")    
+    while True:
+        input_state = GPIO.input(15)
+        if input_state == True:
+            
+            print('Human put the switch on')
+            #90
+            p.ChangeDutyCycle(ninetyDegrees)
+            time.sleep(sleep2)
+            p.ChangeDutyCycle(0)
+            #180
+            p.ChangeDutyCycle(oneHundredAndEightyDegrees)
+            time.sleep(sleep2)
+            p.ChangeDutyCycle(0)
+            #0
+            p.ChangeDutyCycle(zeroDegrees)
+            time.sleep(sleep3)
+            p.ChangeDutyCycle(0)
+            zero_servo = True
+            
+        elif input_state == False:
+            
+            if zero_servo == True:
+                
+                print('Box turned it off')
+                p.start(zeroDegrees)
+                time.sleep(sleep3)
+                p.ChangeDutyCycle(0)
+                zero_servo = False
+            
+except KeyboardInterrupt:
+    p.stop()
+    GPIO.cleanup()
