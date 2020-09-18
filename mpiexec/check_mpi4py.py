@@ -1,4 +1,5 @@
-# coding: utf-8
+# code from https://chainermn.readthedocs.io/en/v1.0.0b2_a/installation/troubleshooting.html
+
 import os
 from mpi4py import MPI
 
