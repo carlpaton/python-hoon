@@ -14,11 +14,11 @@ Python scripts (some magical) which are pillaged and manipulated for reasons of 
 
 * https://github.com/carlpaton/python-hoon/tree/master/machine-learning-fundamentals
 
-### Prime Numbers
+### mpiexec
 
 Warm them `Raspberry PI` CPUs!
 
-* https://github.com/carlpaton/python-hoon/tree/master/prime-numbers
+* https://github.com/carlpaton/python-hoon/tree/master/mpiexec
 
 # All the runs!
 
